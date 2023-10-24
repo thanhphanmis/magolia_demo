@@ -1,0 +1,98 @@
+$font-family-sans-serif: 'Arial', sans-serif;
+$font-family-heading: 'ApexSansBoldT', sans-serif;
+
+$color-main: #00BCE4;
+$color-main-hover: #41D2F1;
+$color-main-pressed: #85E2F5;
+
+$color-subtle: #E0F7FC;
+$color-subtle-pressed: #B3EBF7;
+$color-disabled: #A7AEBA;
+$color-disabled-background: #F1F2F4;
+$color-marketing-banner: #05203C;
+
+
+$white: #ffffff;
+$text-primary: #141415;
+$text-secondary: #707070;
+
+$light: #F8F8F9;
+$red-danger: #E71919;
+
+$tag: #5BB9AD;
+$tag-fill-light: #DEF1EF;
+
+$primary: #00BCE4;
+$secondary: #707070;
+
+$black: #000000;
+$body-color: #141415;
+$border-color:                #CFDCF1 !default;
+$border-color-active:         #00BCE4 !default;
+
+$arrow-color: #8796AD;
+
+$theme-colors: (
+    "color-main": $color-main,
+    "color-main-hover": $color-main-hover,
+    "color-main-pressed": $color-main-pressed,
+    "color-subtle": $color-subtle,
+    "color-subtle-pressed": $color-subtle-pressed,
+    "color-disabled": $color-disabled,
+    "light":    $light,
+    "red-danger": $red-danger,
+    "white":    $white
+) !default;
+
+$border-radius:     8px !default;
+$border-radius-lg:     5px !default;
+
+
+$input-btn-padding-y:         .7rem !default;
+$input-btn-padding-x:         1.9rem !default;
+
+$input-btn-padding-y-sm:      .4rem !default;
+$input-btn-padding-x-sm:      1.1rem !default;
+
+$input-padding-y:             .4rem !default;
+$input-padding-x:             1rem !default;
+
+$grid-gutter-width:           40px !default;
+// $grid-gutter-width-md:           40px !default;
+
+$headings-line-height:        1.2 !default;
+$small-font-size:             0.9rem !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px, //sm: 576px, 36px
+  md: 768px, //md: 768px, 48px
+  lg: 992px, //lg: 992px, 32px
+  xl: 1200px, //xl: 1200px, 60px
+  xxl: 1440px,
+) !default;
+
+$container-max-widths: (
+  sm: 540px, //sm: 540px,
+  md: 700px, //md: 720px,
+  lg: 930px, //lg: 960px,
+  xl: 1080px, //xl: 1140px,
+  xxl: 1440px,
+) !default;
+
+$spacer: 6px !default;
+$spacers: (
+    0_25: ($spacer * 0.25),
+    0_5: ($spacer * 0.5),
+    0: 0,
+    1: ($spacer * 1),
+    2: ($spacer * 2),
+    3: ($spacer * 3),
+    4: ($spacer * 4),
+    5: ($spacer * 5),
+    6: ($spacer * 6),
+    7: ($spacer * 7),
+    8: ($spacer * 8),
+    9: ($spacer * 9),
+    10: ($spacer * 10),
+);

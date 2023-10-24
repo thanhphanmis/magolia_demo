@@ -1,0 +1,93 @@
+.form-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+  user-select: none;
+  line-height: 14px;
+  transition: all .3s ease-in-out;
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    &:checked {
+      ~ {
+        .checkmark {
+          background-color: var(--color-main);
+          &:after {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  &:hover {
+    input {
+      ~ {
+        .checkmark {
+          background-color: var(--color-subtle);
+        }
+      }
+    }
+  }
+  &:focus {
+    input {
+      ~ {
+        .checkmark {
+          border-color: var(--border-color-active);
+        }
+      }
+    }
+  }
+  &.parsley-error {
+    .checkmark {
+      border: 1px solid var(--red-danger);
+    }
+  }
+  .checkmark {
+    &:after {
+      left: 4px;
+      top: 1px;
+      width: 5px;
+      height: 10px;
+      border: solid var(--text-primary);
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  }
+  label {
+    color: var(--text-secondary);
+    font-weight: 400;
+    cursor: pointer;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      padding: 13px;
+      z-index: 1;
+    }
+    a {
+      color: var(--text-secondary);
+    }
+  }
+}
+.checkmark {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: var(--white);
+  border: 1px solid var(--border-color-active);
+  border-radius: 3px;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  &:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+}

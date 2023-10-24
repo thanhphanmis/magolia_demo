@@ -1,0 +1,208 @@
+.mgnl-admin {
+  .__form {
+    max-width: none;
+  }
+  .form-wrapper {
+    .__form-group {
+      flex-direction: column;
+    }
+  }
+}
+
+.__form {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px;
+  .agent-title & {
+    @include media-breakpoint-up(lg) {
+      padding-top: 16px;
+    }
+  }
+  dfn {
+    color: #ec1549;
+    font-weight: bold;
+  }
+  h2 {
+      font-size: 1.375rem;
+  }
+  label {
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+  &-group {
+    gap: 12px;
+    padding-top: 10px;
+    padding-bottom: 6px;
+  }
+  .form-row {
+    padding-top: 8px;
+    width: 100%;
+  }
+  .form-desc {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+  }
+  .parsley-error + .parsley-errors-list {
+    position: relative;
+    list-style-type: none;
+    padding-left: 15px;
+    margin: 4px 0 0;
+    font-size: 0.75rem;
+    line-height: 14px;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      left: 0;
+      background-image: url("data:image/svg+xml,%0A%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.99996 0.166504C2.77996 0.166504 0.166626 2.77984 0.166626 5.99984C0.166626 9.21984 2.77996 11.8332 5.99996 11.8332C9.21996 11.8332 11.8333 9.21984 11.8333 5.99984C11.8333 2.77984 9.21996 0.166504 5.99996 0.166504ZM6.58329 8.9165H5.41663V7.74984H6.58329V8.9165ZM6.58329 6.58317H5.41663V3.08317H6.58329V6.58317Z' fill='%23E71919'/%3E%3C/svg%3E%0A");
+
+    }
+  }
+  .button-wrapper {
+    margin-top: 18px;
+  }
+  .g-recaptcha {
+    margin-top: 12px;
+  }
+  &-modal {
+    .modal-body,
+    .modal-footer,
+    .modal-header {
+      padding: 1rem;
+    }
+    &-alert,
+    &-agent {
+      .modal-title {
+        font-size: 1rem;
+        padding: 14px 32px;
+        font-weight: 700;
+      }
+      .modal-header {
+        height: 52px;
+        background-color: var(--light);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom: none;
+      }
+      .modal-body,
+      .modal-dialog {
+        max-width: 720px;
+      }
+      .modal-content {
+        border-radius: 20px;
+      }
+      .btn-close {
+        position: relative;
+        right: 32px;
+        background-image: url("data:image/svg+xml,%0A%3Csvg width='14' height='15' viewBox='0 0 14 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.3 1.20971C13.1131 1.02246 12.8595 0.917227 12.595 0.917227C12.3305 0.917227 12.0768 1.02246 11.89 1.20971L6.99997 6.08971L2.10997 1.19971C1.92314 1.01246 1.66949 0.907227 1.40497 0.907227C1.14045 0.907227 0.886802 1.01246 0.699971 1.19971C0.309971 1.58971 0.309971 2.21971 0.699971 2.60971L5.58997 7.49971L0.699971 12.3897C0.309971 12.7797 0.309971 13.4097 0.699971 13.7997C1.08997 14.1897 1.71997 14.1897 2.10997 13.7997L6.99997 8.90971L11.89 13.7997C12.28 14.1897 12.91 14.1897 13.3 13.7997C13.69 13.4097 13.69 12.7797 13.3 12.3897L8.40997 7.49971L13.3 2.60971C13.68 2.22971 13.68 1.58971 13.3 1.20971Z' fill='%238796AD'/%3E%3C/svg%3E%0A");
+      }
+      .modal-agent-title {
+        padding: 32px 32px 0;
+        font-size: 1.375rem;
+      }
+      &.book-flight-modal {
+        .modal-agent-title {
+          display: none;
+        }
+        .text {
+          padding: 32px 32px 0;
+        }
+        .__form-text--body {
+          position: relative;
+          transform: translateY(0);
+        }
+      }
+    }
+    &-alert {
+      .modal-dialog {
+        max-width: var(--bs-modal-width);
+      }
+      .modal-body {
+        padding: 16px 32px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+	.__form {
+    padding: 16px 0;
+    h2 {
+      font-size: 1.25rem;
+    }
+    &-group {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    &-modal {
+      &-agent {
+        margin-top: 99px;
+        height: calc(100% - 99px);
+        .modal-dialog {
+          margin: 0;
+        }
+        .modal-header {
+          border-radius: 0;
+          border-bottom: 1px solid var(--border-color);
+        }
+        .modal-title {
+          text-align: center;
+          margin: 0 auto;
+          width: 100%;
+        }
+        .modal-body {
+          margin: 0;
+          padding: 0 16px;
+        }
+        .modal-content {
+          border-radius: 0;
+        }
+        .btn-close {
+          background-image: none;
+          color: var(--text-primary);
+          font-weight: 700;
+          opacity: 1;
+          width: auto;
+          right: 16px;
+          
+        }
+        .modal-agent-title {
+          padding: 16px 0 0;
+        }
+        &.book-flight-modal {
+          .text {
+            padding: 32px 0 0;
+          }
+        }
+      }
+    }
+	}
+}
+
+@include media-breakpoint-up(md) {
+  .form-wrapper {
+    .__form-group {
+      flex-direction: inherit;
+    }
+  }
+  .form {
+    &-100 {
+      width: 100%
+    }
+    &-75 {
+      width: calc(75% + 24px);
+    }
+  }
+}
+
+.__select--normal {
+	color: var(--text-secondary);
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%);
+	background-position: calc(100% - 20px) calc(1em + 5px), calc(100% - 15px) calc(1em + 5px), calc(100% - 2.5em) 0.5em;
+	background-size: 5px 5px, 5px 5px, 1px 1.5em;
+	background-repeat: no-repeat;
+}

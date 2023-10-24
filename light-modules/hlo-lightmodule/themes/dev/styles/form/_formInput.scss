@@ -1,0 +1,33 @@
+.form-control {
+  margin-top: 4px;
+  transition: all .2s ease-in-out;
+  &:hover {
+    background-color: var(--color-subtle);
+  }
+  &:focus {
+    background-color: var(--color-subtle);
+    border-color: var(--border-color-active);
+    outline: none;
+    box-shadow: none;
+  }
+  &.parsley-error {
+    border: 1px solid var(--red-danger);
+  }
+}
+
+input.form-control {
+  height: 48px;
+}
+
+textarea.form-control {
+  height: 120px;
+  resize: none;
+}
+
+.__input-icon {
+  &:hover {
+    .form-control {
+      background-color: var(--color-subtle);
+    }
+  }
+}

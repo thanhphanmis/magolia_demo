@@ -1,0 +1,13 @@
+cssFiles:
+  vendors:
+    addFingerPrint: true
+    media: all
+    link: /.resources/hlo-lightmodule/themes/dist/css/vendors.css
+
+jsFiles:
+  runtime:
+    addFingerPrint: true
+    link: /.resources/hlo-lightmodule/themes/dist/js/runtime.js
+  vendors:
+    addFingerPrint: true
+    link: /.resources/hlo-lightmodule/themes/dist/js/vendors.js

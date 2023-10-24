@@ -27,3 +27,4 @@ obj
 logs
 cache
 apache-tomcat
+dist

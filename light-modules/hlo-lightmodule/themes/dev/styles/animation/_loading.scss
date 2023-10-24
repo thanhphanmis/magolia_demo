@@ -1,0 +1,42 @@
+.hlo-loading {
+  display: none;
+  position: fixed;
+  top: calc(50% - 35px);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border: 8px solid var(--white);
+  border-top: 8px solid var(--color-main);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+  z-index: 10001;
+  &.active {
+    display: block;
+  }
+}
+.hlo-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba($color: #000000, $alpha: 0.6);
+  z-index: 10000;
+  &.active {
+    display: block;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

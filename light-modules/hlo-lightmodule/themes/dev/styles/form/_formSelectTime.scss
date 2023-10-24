@@ -1,0 +1,110 @@
+.__select,
+.select-time {
+  position: relative;
+	.form-control {
+    height: 48px;
+  }
+  .icon-select {
+    position: absolute;
+    bottom: 12px;
+    right: 20px;
+    cursor: pointer;
+  }
+  .select-selected {
+    height: 48px;
+    padding: 12px 16px;
+    &.readonly {
+      pointer-events: none;
+      &::after {
+        display: none;
+      }
+    }
+  }
+  .select-items {
+    position: absolute;
+    background-color: var(--white);
+    top: calc(100% + 12px);
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    max-height: 236px;
+    overflow-y: auto;
+    &.readonly {
+      pointer-events: none;
+    }
+    div {
+      border-bottom: 1px solid var(--border-color);
+      color: var(--text-secondary);
+      &:first-child {
+        border-top-left-radius: 6px;
+      }
+      &:last-child {
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        border-bottom: none;
+      }
+    }
+  }
+  .select-items div,.select-selected {
+    padding: 12px 16px;
+    cursor: pointer;
+    user-select: none;
+    &:focus {
+      border-color: var(--border-color-active);;
+    }
+  }
+  .same-as-selected,
+  .select-items div:hover {
+    background-color: var(--color-subtle);
+  }
+
+  .parsley-error {
+    & ~ .form-control {
+      border: 1px solid var(--red-danger);
+    }
+  }
+  .parsley-errors-list {
+    position: absolute!important;
+    top: 48px;
+  }
+}
+
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 24px;
+  right: 20px;
+  height: 5px;
+  width: 8px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='8' height='5' viewBox='0 0 8 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0.706145 1.9141L3.29615 4.5041C3.68615 4.8941 4.31615 4.8941 4.70615 4.5041L7.29614 1.9141C7.92615 1.2841 7.47614 0.204102 6.58614 0.204102H1.40615C0.516145 0.204102 0.0761452 1.2841 0.706145 1.9141Z' fill='%238796AD'/%3e%3c/svg%3e");
+}
+
+.select-hide {
+  display: none;
+}
+
+@include media-breakpoint-down(sm) {
+  .form-row {
+    .custom-select {
+      padding-bottom: 15px;
+    }
+  }
+  .__select,
+  .select-time {
+    .select-items {
+      top: 100%;
+    }
+  }
+}

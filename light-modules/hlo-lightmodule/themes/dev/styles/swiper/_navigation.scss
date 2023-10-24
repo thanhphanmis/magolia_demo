@@ -1,0 +1,27 @@
+.swiper-navigation{
+  .swiper-button-prev, 
+  .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-subtle);
+    border-radius: 50%;
+    transition: background-color .3s ease-in-out;
+    &::after {
+      font-size: 0.75rem;
+      font-weight: bold;
+      color: $black;
+    }
+    &:hover {
+      background-color: var(--color-main-hover);
+    }
+    &:focus {
+      background-color: var(--color-main-pressed);
+    }
+    &.swiper-button-disabled {
+      background-color: var(--color-disabled-background);
+    }
+  }
+  .swiper-button-prev {
+    left: -7px;
+  }
+}

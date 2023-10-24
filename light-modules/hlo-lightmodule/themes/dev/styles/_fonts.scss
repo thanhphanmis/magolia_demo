@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'GothamRounded';
+    src: url('../assets/fonts/GothamRounded-Light.otf') format("opentype"), url('../assets/fonts/GothamRoundedLight_21020.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GothamRounded';
+    src: url('../assets/fonts/GothamRounded-LightItalic.otf') format("opentype");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GothamRounded';
+    src: url('../assets/fonts/GothamRounded-Book.otf') format("opentype"), url('../assets/fonts/GothamRoundedBook_21018.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GothamRounded';
+    src: url('../assets/fonts/GothamRounded-BookItalic.otf') format("opentype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GothamRounded';
+    src: url('../assets/fonts/GothamRounded-Medium.otf') format("opentype"), url('../assets/fonts/GothamRoundedMedium_21022.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GothamRounded';
+    src: url('../assets/fonts/GothamRounded-MediumItalic.otf') format("opentype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GothamRounded';
+    src: url('../assets/fonts/GothamRounded-Bold.otf') format("opentype"), url('../assets/fonts/GothamRoundedBold_21016.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GothamRounded';
+    src: url('../assets/fonts/GothamRounded-BoldItalic.otf') format("opentype");
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'ApexSansBoldT';
+    src: url('../assets/fonts/ApexSansBoldT.eot');
+    src: url('../assets/fonts/ApexSansBoldT.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/ApexSansBoldT.woff2') format('woff2'),
+        url('../assets/fonts/ApexSansBoldT.woff') format('woff'),
+        url('../assets/fonts/ApexSansBoldT.ttf') format('truetype'),
+        url('../assets/fonts/ApexSansBoldT.svg#ApexSansBoldT') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+//@font-face {
+//	font-family: 'ApexSansBook';
+//	src: url('../assets/fonts/ApexSansBook.eot');
+//	src: url('../assets/fonts/ApexSansBook.eot?#iefix') format('embedded-opentype'),
+//	url('../assets/fonts/ApexSansBook.woff2') format('woff2'),
+//	url('../assets/fonts/ApexSansBook.woff') format('woff'),
+//	url('../assets/fonts/ApexSansBook.ttf') format('truetype'),
+//	url('../assets/fonts/ApexSansBook.svg#ApexSansBoldT') format('svg');
+//	font-weight: bold;
+//	font-style: normal;
+//	font-display: swap;
+//}

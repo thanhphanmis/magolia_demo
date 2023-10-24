@@ -1,0 +1,26 @@
+.__swiper {
+  .slide-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+  }
+  .swiper-slide-active .slide-animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .swiper-slide-active .slide-animate {
+    animation: slideIn 1s forwards;
+  }
+}
+
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

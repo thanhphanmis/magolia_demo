@@ -1,0 +1,85 @@
+@import '~js-datepicker/dist/datepicker.min.css';
+.__datepicker-custom,
+.input-date {
+  cursor: pointer;
+  & ~ .qs-datepicker-container {
+    width: 100%;
+    box-shadow: 2px 0px 14px 0px #0000000F;
+    border: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-top: 10px;
+    padding-block: 10px 30px;
+    .qs {
+      &-controls {
+        height: 56px;
+        background-color: var(--white);
+        padding: 0 16px;
+        width: 96%;
+        margin: auto;
+      }
+      &-squares {
+        justify-content: center;
+      }
+      &-square {
+        font-size: 0.875rem;
+        font-weight: 400;
+        border-radius: 50%;
+      }
+      &-square:not(.qs-empty):not(.qs-disabled):not(.qs-day):not(.qs-active):hover {
+        background: var(--color-main-hover);
+      }
+      &-day {
+        width: 42px;
+        height: 32px;
+      }
+      &-num {
+        width: 42px;
+        height: 42px;
+        &:hover {
+          background: var(--color-main-hover);
+          border-radius: 50%;
+        }
+      }
+      &-current {
+        border: 1px solid;
+        border-radius: 50%;
+        text-decoration: none;
+      }
+      &-active {
+        background: var(--color-main);
+        border: 1px solid var(--color-main);
+        border-radius: 50%;
+      }
+      &-arrow {
+        top: -3px;
+        &::after {
+          border: solid $arrow-color;
+          border-width: 0 2px 2px 0;
+          display: inline-block;
+          padding: 3px;
+          transform: rotate(135deg);
+        }
+        &:hover {
+          background: transparent;
+        }
+        &.qs-right {
+          &::after {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+  & ~ .icon-select {
+    position: absolute;
+    bottom: 12px;
+    right: 20px;
+    cursor: pointer;
+  }
+  &.parsley-error {
+    ~ .icon-select {
+      bottom: 30px;
+    }
+  }
+}
