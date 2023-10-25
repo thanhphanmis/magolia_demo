@@ -1,0 +1,63 @@
+extends /templates/base/view.pug
+
+append meta
+    title Utilities
+
+append content
+
+    section.
+    .container
+      .my-5
+        h2.mb-4 Buttons
+        .d-flex.gap-4
+          button.__btn.__btn--primary Primary
+          button.__btn.__btn--secondary Secondary
+          button.__btn.__btn--text
+            svg(width='24' height='24' viewbox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+              path(d='M18 13H13V18C13 18.55 12.55 19 12 19C11.45 19 11 18.55 11 18V13H6C5.45 13 5 12.55 5 12C5 11.45 5.45 11 6 11H11V6C11 5.45 11.45 5 12 5C12.55 5 13 5.45 13 6V11H18C18.55 11 19 11.45 19 12C19 12.55 18.55 13 18 13Z' fill='#00BCE4')
+            | Text
+        .d-flex.gap-4.mt-4
+          button.__btn--icon.__btn--icon--primary
+            svg(width='24' height='24' viewbox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+              path(d='M14.707 2.29297L13.293 3.70703L14.3887 4.80273L8.18945 9.77539L6.70703 8.29297L5.29297 9.70703L9.09375 13.5078L3 19.5996V21H4.40039L10.4922 14.9062L14.293 18.707L15.707 17.293L14.3105 15.8965L19.2148 9.62891L20.293 10.707L21.707 9.29297L14.707 2.29297ZM15.7988 6.23633L17.7793 8.2168L12.9766 14.3594L9.72461 11.1074L15.7988 6.23633Z' fill='#141415')
+          button.__btn--icon.__btn--icon--toggle
+            svg(width='24' height='24' viewbox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+              path(d='M14.707 2.29297L13.293 3.70703L14.3887 4.80273L8.18945 9.77539L6.70703 8.29297L5.29297 9.70703L9.09375 13.5078L3 19.5996V21H4.40039L10.4922 14.9062L14.293 18.707L15.707 17.293L14.3105 15.8965L19.2148 9.62891L20.293 10.707L21.707 9.29297L14.707 2.29297ZM15.7988 6.23633L17.7793 8.2168L12.9766 14.3594L9.72461 11.1074L15.7988 6.23633Z' fill='#141415')
+          button.__btn--icon.__btn--icon--toggle--invert
+            svg(width='24' height='24' viewbox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+              path(d='M14.707 2.29297L13.293 3.70703L14.3887 4.80273L8.18945 9.77539L6.70703 8.29297L5.29297 9.70703L9.09375 13.5078L3 19.5996V21H4.40039L10.4922 14.9062L14.293 18.707L15.707 17.293L14.3105 15.8965L19.2148 9.62891L20.293 10.707L21.707 9.29297L14.707 2.29297ZM15.7988 6.23633L17.7793 8.2168L12.9766 14.3594L9.72461 11.1074L15.7988 6.23633Z' fill='#141415')
+
+
+      h2.mb-4 Gallery
+      .__cmp--galleries
+        .__cmp--galleries--left
+          .__gallery
+            a.__video--icon.glightbox(href='https://www.youtube.com/watch?v=Ga6RYejo6Hk')
+              img.w-100.object-fit-cover(src='/cms/assets/images/media_image.png' loading='lazy')
+        .__cmp--galleries--right
+          .__gallery
+            a.glightbox(href='/cms/assets/images/media_image.png')
+              img.w-100.object-fit-cover(src='/cms/assets/images/media_image.png' loading='lazy')
+          .__gallery
+            a.glightbox(href='/cms/assets/images/media_image.png')
+              img.w-100.object-fit-cover(src='/cms/assets/images/media_image.png' loading='lazy')
+          .__gallery
+            a.glightbox(href='/cms/assets/images/media_image.png')
+              img.w-100.object-fit-cover(src='/cms/assets/images/media_image.png' loading='lazy')
+          .__gallery
+            a.glightbox(href='/cms/assets/images/media_image.png')
+              img.w-100.object-fit-cover(src='/cms/assets/images/media_image.png' loading='lazy')
+      h2.mt-4.mb-4 Form Enquire
+      button.__btn.__btn--primary(data-bs-toggle="modal" data-bs-target="#hlo-modal") Enquire now
+
+      #hlo-modal.modal.fade(tabindex='-1' aria-labelledby='hlo-modal' aria-hidden='true')
+        .modal-dialog
+          .modal-content
+            .modal-header
+              h5#hlo-modal.modal-title Enquire
+              button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+            .modal-body
+
+            .modal-footer
+              button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
+              button.btn.btn-primary(type='button') Save changes
