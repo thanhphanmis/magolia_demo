@@ -1,0 +1,14 @@
+label: First Page Dialog
+ 
+form:
+  properties:
+ 
+    title:
+      $type: textField
+      label: Page Title
+      description: "Define the Page's title."
+ 
+    abstract:
+      $type: textField
+      label: Abstract
+      description: Add an Abstract of the Page.

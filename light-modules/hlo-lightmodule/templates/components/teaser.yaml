@@ -1,0 +1,4 @@
+title: Teaser
+renderType: freemarker
+dialog: hlo-lightmodule:components/teaser
+templateScript: /hlo-lightmodule/templates/components/teaser.ftl

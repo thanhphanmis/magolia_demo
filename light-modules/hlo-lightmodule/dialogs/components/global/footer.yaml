@@ -1,0 +1,118 @@
+label: Footer
+form:
+  properties:
+    bottomNavigationRoot:
+      description: "The root of Links on the bottom of footer"
+      label: Bottom Nav Root
+      $type: linkField
+      datasource:
+        $type: jcrDatasource
+        workspace: navigation
+    mainNavigationRoot:
+      description: "The root of Links on the main navigation items of footer"
+      label: Primary Nav Root
+      $type: linkField
+      datasource:
+        $type: jcrDatasource
+        workspace: navigation
+    copyright:
+      $type: textField
+      rows: 2
+      label: "Copyright"
+      description: "Text for the Copyright on the footer"
+    socialLinks:
+      label: Social Links
+      $type: jcrMultiField
+      field:
+        label: ''
+        $type: compositeField
+        properties:
+          icon:
+            label: Icon
+            $type: damLinkField
+          url:
+            label: Link
+            $type: textField
+
+    paymentMethodsText:
+      $type: textField
+      label: "Payment Methods Text"
+      description: "Text for the Payment Methods on the footer"
+
+    paymentMethods:
+      description: "Payment methods accepted Logos on the footer"
+      label: Payment methods
+      $type: jcrMultiField
+      field:
+        label: ''
+        $type: compositeField
+        properties:
+          icon:
+            label: Icon
+            $type: damLinkField
+    awardOfText:
+      $type: textField
+      label: "Award Of Text"
+      description: "Text for the award on the footer"
+
+    memberOfText:
+      $type: textField
+      label: "Member Of Text"
+      description: "Text for the Member Of on the footer"
+
+    memberOfLogos:
+      description: "Member Of Logos on the footer"
+      label: Member of
+      $type: jcrMultiField
+      field:
+        label: ''
+        $type: compositeField
+        properties:
+          icon:
+            label: Icon
+            $type: damLinkField
+
+    awards:
+      description: "Awards"
+      label: Awards
+      $type: jcrMultiField
+      field:
+        label: ''
+        $type: compositeField
+        properties:
+          text:
+            $type: textField
+            label: "Text"
+            description: "Text for the awards on the footer"
+          icon:
+            label: "Logo/Icon"
+            $type: damLinkField
+
+  layout:
+    $type: tabbedLayout
+    tabs:
+      generalTab:
+        label: General
+        fields:
+          - name: bottomNavigationRoot
+          - name: mainNavigationRoot
+          - name: copyright
+      socialTab:
+        label: Social Links
+        fields:
+          - name: socialLinks
+      awardTab:
+        label: Awards
+        fields:
+          - name: awardOfText
+          - name: awards
+      memberOfTab:
+        label: Member Of
+        fields:
+          - name: memberOfText
+          - name: memberOfLogos
+      paymentMethodsTab:
+        label: Payment Methods
+        fields:
+          - name: paymentMethodsText
+          - name: paymentMethods

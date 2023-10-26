@@ -1,0 +1,10 @@
+label: Teaser
+ 
+form:
+  properties:
+ 
+    targetPageLink:
+      $type: pageLinkField
+      label: Page
+      description: Choose a page to link to.
+      required: true

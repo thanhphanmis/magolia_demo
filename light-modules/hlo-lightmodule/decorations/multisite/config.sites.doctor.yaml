@@ -1,0 +1,32 @@
+templates:
+  class: info.magnolia.module.site.templates.ReferencingPrototypeTemplateSettings
+  prototypeId: hlo-lightmodule:prototype/prototype
+ 
+i18n:
+  class: info.magnolia.cms.i18n.DefaultI18nContentSupport
+  enabled: true
+  fallbackLocale: en
+  locales:
+    en:
+      country: ''
+      enabled: true
+      language: en
+    de:
+      country: ''
+      enabled: true
+      language: de
+    fr:
+      country: ''
+      enabled: true
+      language: fr
+    it:
+      country: ''
+      enabled: true
+      language: it
+ 
+## Also In JCR defined. Important to show both possibilities.
+mappings:
+  website:
+    URIPrefix: ''
+    handlePrefix: /home
+    repository: website

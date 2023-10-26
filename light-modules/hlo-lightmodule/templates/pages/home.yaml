@@ -1,0 +1,14 @@
+title: Docotr Page
+templateScript: /hlo-lightmodule/templates/prototype/prototype.ftl
+class: info.magnolia.module.site.templates.PageTemplateDefinition
+dialog: hlo-lightmodule:pages/first
+visible: true
+renderType: site
+
+parameters:
+  bodyCls: abc
+
+areas:
+  main:
+    title: Main
+    templateScript: /hlo-lightmodule/templates/areas/common/contentContainer.ftl   

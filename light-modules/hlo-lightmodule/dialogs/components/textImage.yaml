@@ -1,0 +1,35 @@
+label: Text and Image
+ 
+form: 
+  properties:
+ 
+    headline:
+      $type: textField
+      label: Headline
+      description: Enter a headline
+      i18n: true
+    imageLink:
+      $type: damLinkField
+      label: Image Link
+      description: Choose an Image from the Assets App.
+   
+    imageCaption:
+      $type: textField
+      label: Image Caption
+      description: Define a caption for the image.
+      i18n: true
+  # This is the 'layout' code to use. Ensure it's placed on the same level as 'properties'.
+  layout:
+    $type: tabbedLayout
+    tabs:
+      tabMain:
+        label: Text
+        fields:
+          - name: headline
+          - name: text
+ 
+      tabImage:
+        label: Image
+        fields:
+          - name: imageLink
+          - name: imageCaption

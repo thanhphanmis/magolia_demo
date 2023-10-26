@@ -1,0 +1,26 @@
+templateScript: /hlo-lightmodule/templates/prototype/prototype.ftl
+class: info.magnolia.module.site.templates.PrototypeTemplateDefinition
+visible: false
+renderType: site
+type: prototype
+
+areas:
+  head:
+    templateScript: /hlo-lightmodule/templates/areas/prototype/head.ftl
+  javascript:
+    editable: false
+    templateScript: /hlo-lightmodule/templates/areas/prototype/javascript.ftl
+  header:
+    editable: false
+    renderType: freemarker
+    templateScript: /hlo-lightmodule/templates/components/global/header.ftl
+    type: single
+    dialog: hlo-lightmodule:components/global/header
+  footer:
+    editable: false
+    renderType: freemarker
+    templateScript: /hlo-lightmodule/templates/components/global/footer.ftl
+    type: single
+    dialog: hlo-lightmodule:components/global/footer
+  main:
+    type: list

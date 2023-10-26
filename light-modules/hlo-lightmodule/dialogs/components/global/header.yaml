@@ -1,0 +1,25 @@
+label: Header
+form:
+  properties:
+    topNavigationRoot:
+      description: "The root of Links on the top of header"
+      label: Top Nav Root
+      $type: linkField
+      datasource:
+        $type: jcrDatasource
+        workspace: navigation
+    mainNavigationRoot:
+      description: "The root of Links on the main navigation items of header"
+      label: Primary Nav Root
+      $type: linkField
+      datasource:
+        $type: jcrDatasource
+        workspace: navigation
+    logo:
+      description: "The logo displays on the Navigation"
+      $type: damLinkField
+      label: Main Logo
+    phoneNumber:
+      description: "The Phone Number displays on the Navigation"
+      $type: textField
+      label: Phone Number

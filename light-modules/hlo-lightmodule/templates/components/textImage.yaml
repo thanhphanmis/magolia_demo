@@ -1,0 +1,5 @@
+title: Text and Image
+renderType: freemarker
+dialog: hlo-lightmodule:components/textImage
+templateScript: /hlo-lightmodule/templates/components/textImage.ftl
+label: Text and Image
