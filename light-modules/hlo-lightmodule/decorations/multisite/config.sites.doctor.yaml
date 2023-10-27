@@ -1,7 +1,10 @@
 templates:
   class: info.magnolia.module.site.templates.ReferencingPrototypeTemplateSettings
   prototypeId: hlo-lightmodule:prototype/prototype
- 
+
+theme:
+  name: theme
+
 i18n:
   class: info.magnolia.cms.i18n.DefaultI18nContentSupport
   enabled: true

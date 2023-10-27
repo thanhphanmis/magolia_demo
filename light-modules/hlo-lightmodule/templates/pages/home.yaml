@@ -8,6 +8,11 @@ renderType: site
 parameters:
   bodyCls: abc
 
+cssFiles:
+  - link: /.resources/hlo-lightmodule/themes/dist/css/0_homepage.css
+jsFiles:
+  - link: /.resources/hlo-lightmodule/themes/dist/js/0_homepage.js
+
 areas:
   main:
     title: Main
