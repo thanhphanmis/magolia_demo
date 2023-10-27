@@ -1,10 +1,10 @@
 import "./style.scss";
 import WOW from "../../lib/wow/wow";
 import "../../lib/counterup/counterup.min";
-// import "../../lib/tempusdominus/js/moment.min";
-// import "../../lib/tempusdominus/js/moment-timezone.min";
-// import "../../lib/tempusdominus/js/tempusdominus-bootstrap-4";
-import 'tempusdominus-bootstrap-4'
+import "../../lib/tempusdominus/js/moment.min";
+import "../../lib/tempusdominus/js/moment-timezone.min";
+import "../../lib/tempusdominus/js/tempusdominus-bootstrap-4";
+
 
 $(function () {
   "use strict";
